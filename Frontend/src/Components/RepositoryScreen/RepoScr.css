@@ -1,0 +1,306 @@
+.whole-repo{
+    margin: 0;
+    display: flex;
+    width: 98vw;
+    height: 98vh;
+}
+
+/* left bar */
+.left-bar{
+    width: 18%;
+    height: 100%;
+    border-right: 1px solid rgb(240, 238, 238);
+}
+.codeAnt-head{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+
+  font-family: satoshi; 
+  font-weight:400 ; 
+  font-size: 24px;
+  line-height: 26.4px;
+
+}
+.codeAnt-head img{
+   width: 28.5px;
+   height: 30px;
+}
+.option-btn-div{
+    display: none;
+}
+.menu-bar ,.menu-bar-open{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    height: 85vh;
+    font-size: 0.9em;
+}
+select{
+   display: flex;
+    width: 180px;
+    height: 25px;
+    
+}
+.selected{
+    color: white;
+    padding: 7px;
+}
+.each-selection{
+    /* display: flex; */
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    width: 80%;
+    cursor: pointer;
+   
+}
+.selected img ,.each-selection img{
+    height: 20px;
+    width: 20px;
+}
+.selected{
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    width: 80%;
+    background-color: #1b63e1;
+    cursor: pointer;
+}
+
+/* Right bar */
+.right-bar{
+  width: 84%;
+  height: 100%;
+  padding: 10px;
+}
+.right-bar-mb{
+    width: 84%;
+    height: 100%;
+    padding: 10px;
+}
+.right-inner{
+    border: 1px solid rgb(225, 222, 222);
+    padding: 13px;
+    border-radius: 5px;
+  
+}
+.repo-head{
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+   
+}
+
+.repos-deatils{
+    display: flex;
+    justify-content: space-between;
+}
+.repositories-head{
+    color: #181D27;
+   font-weight: bold;
+   font-size: 1.7em;
+}
+.total-repo{
+  color: #414651;
+  font-size: 14px;
+  padding-left: 7px;
+}
+.repo-add-refersh{
+   display: flex;
+   gap: 20px;
+}
+.refresh-all{
+    border: 1px solid rgb(229, 220, 220);
+    padding: 7px 35px;
+    position: relative;
+    height: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.refresh-img{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+.add-repo{
+    background-color: #175CD3;
+    border-radius: 5px;
+    color: white;
+    padding: 7px 10px;
+    height: 22px;
+    cursor: pointer;
+}
+.search-bar{
+    position: relative;
+}
+input{
+    width: 300px;
+    height: 25px;
+    padding-left: 25px;
+    border-radius: 5px;
+    outline: none;
+}
+.search-img{
+  position: absolute;
+  top: 2px;
+  left: 5px;
+}
+.repositories{
+    margin-top: 10px;
+    max-height: 76vh;
+    overflow-y: scroll;
+}
+.each-repo-details{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(226, 225, 222);
+    width: 100%;
+    padding: 13px;
+    gap: 12px;
+}
+.each-name-type{
+    display: flex;
+    gap: 8px;
+    padding: 5px 0px;
+}
+.repo-name{
+  
+   font-weight: 500;
+   font-size: 20px;
+   cursor: pointer;
+   
+}
+.repo-type{
+    border: 1px solid #B2DDFF;
+    background-color: #EFF8FF;
+    padding: 3px 7px;
+    border-radius: 15px;
+    font-family: inter;
+   font-weight: 400;
+   font-size: 14px;
+   color: #175CD3
+}
+.each-tech-size-update{
+    display: flex;
+    gap: 40px;
+    color: #585a5e;
+    font-size: 15px;
+}
+.repo-tech{
+    display: flex;
+    position: relative;
+}
+.dot-tech{
+    width: 6px;
+    height: 6px;
+    background-color: rgb(91, 91, 240);
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    bottom: 7px;
+}
+.repo-size{
+  position: relative;
+}
+.db-img{
+  position: absolute;
+  left: -13px;
+}
+
+.extra-page{
+    height: 98vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.extra-page-inner{
+    height: 200px;
+    width: 300px;
+    border: 1px solid rgb(238, 241, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* small devices */
+
+@media screen and (max-width: 768px){
+
+    .whole-repo{
+        flex-direction: column;
+      
+    }
+    
+    .left-bar{
+        width: 100%;
+        height: 10vh;
+        border: 1px solid rgb(223, 222, 222);
+        
+    }
+    .option-btn-div{
+        display: block;
+        cursor: pointer;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .menu-bar-open{
+         justify-content: flex-start;
+         z-index: 1000;
+        position: absolute;
+        background-color: white;
+        width: 98%;
+        height: 60vh;
+        border-bottom: 1px solid rgb(223, 222, 222);
+    }
+    select{
+        width: 84%;
+        height: 35px;
+        border-radius: 5px;
+    }
+
+
+
+    /* Right bar */
+.right-bar{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+  
+  }
+  .right-bar-mb{
+    width: 100%;
+    height: 150%;
+    padding: 0px;
+    z-index: -1000;
+    background: rgba(0, 0, 0, 0.16);
+    backdrop-filter: blur(8px);
+    
+  }
+  .repos-deatils{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .repo-add-refersh {
+    
+  }
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.repositories::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .repositories {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
