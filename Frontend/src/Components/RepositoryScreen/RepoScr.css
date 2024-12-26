@@ -235,6 +235,8 @@ input{
 
     .whole-repo{
         flex-direction: column;
+        width: 100vw;
+        height: 90vh;
       
     }
     
@@ -291,6 +293,11 @@ input{
   .repo-add-refersh {
     
   }
+    .each-tech-size-update{
+    gap: 33px;
+    font-size: 13px;
+  }
+
 }
 
 
